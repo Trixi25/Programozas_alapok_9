@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felsorolások HTML-ben</title>
+</head>
+<body>
+
+    <!-- sorszám nélküli felsorolás
+    A HTML <ul>címke egy rendezetlen (felsorolt) listát határoz meg.
+    A listaelemek alapértelmezés szerint pontokkal (kis fekete körökkel) lesznek megjelölve.-->
+    <ul>
+        <li>xhtml</li>
+        <li>css</li>
+        <li>xml</li>
+        <li>php</li>
+        <li>java</li>
+    </ul>
+
+    <!--A listák egymásba ágyazhatók (lista a listán belül)-->
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+          <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+          </ul>
+        </li>
+        <li>Milk</li>
+      </ul>
+
+    <!-- sorszámozott  felsorolás
+    A HTML <ol>címke rendezett listát határoz meg. A rendezett lista lehet numerikus vagy alfabetikus.
+    A listaelemek alapértelmezés szerint számokkal lesznek megjelölve
+    típusai lehet: 1, A, a, I, i
+    -->
+    <ol>
+        <li>xhtml</li>
+        <li>css</li>
+        <li>xml</li>
+        <li>php</li>
+        <li>java</li>
+    </ol>
+
+    <ol type="A" start="3">
+        <li>xhtml</li>
+        <li>css</li>
+        <li>xml</li>
+        <li>php</li>
+        <li>java</li>
+    </ol>
+    
+    <!-- A leíráslista kifejezések listája, mindegyik kifejezés leírásával.
+
+A <dl>címke határozza meg a leírási listát, a címke határozza meg a kifejezést (nevet),
+     a címke pedig az egyes kifejezéseket: <dt> <dd>-->
+    <dl>
+        <dt>XHTML</dt>
+        <dd>XHTML (Extensible HyperText Markup Language)</dd>
+        <dt>PHP</dt>
+        <dd>PHP (PHP: Hypertext Preprocessor)</dd>
+    </dl>
+</body>
+</html>
